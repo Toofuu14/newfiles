@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -10,7 +12,15 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
+        .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  video {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
         .main-content {
             display: flex;
             flex-direction: column;
@@ -28,7 +38,8 @@
             text-align: center;
             font-size: 15px;
         }
-        .rect1{
+
+        .rect1 {
             width: 200px;
             height: 50px;
             border-radius: 10px;
@@ -86,24 +97,19 @@
 
         </div>
         <ul>
-            <li><a href="2about.html">Project</a></li>
+            <li><a href="home.html">Home</a></li>
         </ul>
 
 
     </header>
 
     <div class="main-content">
-        <div class="rect1">
 
-        </div>
-
-        <div class="rect">
-            <p>
-                Developed a [brief description of the project], which [impact or result of the project].
-                Utilized [technologies/tools used] to achieve [specific outcome or feature].
-            </p>
-
-        </div>
+        <div class="video-container">
+            <video controls>
+              <source src="videoto.mp4" type="video/mp4">
+            </video>
+          </div>
 
     </div>
 </body>
