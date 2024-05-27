@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -12,22 +11,26 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .video-container {
-    max-width: 700px;
-    margin: 0 10%;
-  }
-  video {
-    width: 110%;
-    height: 450px;
-    display: block;
-  }
+            max-width: 700px;
+            margin: 0 10%;
+        }
+
+        video {
+            width: 100%;
+            height: 450px;
+            display: block;
+            margin: 10px;
+        }
+
         .main-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             place-items: center;
             gap: 20px;
-        }  
+        }
 
         header {
             top: 0;
@@ -86,10 +89,13 @@
     <div class="main-content">
         <div class="video-container">
             <video controls>
-              <source src="videoto.mp4" type="video/mp4">
+                <source src="videoto.mp4" type="video/mp4">
             </video>
-          </div>
+            <video controls>
+                <source src="inang to.mp4" type="video/mp4">
+            </video>
         </div>
+    </div>
 </body>
 
 </html>
