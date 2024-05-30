@@ -19,14 +19,33 @@
       gap: 20px;
     }
 
-    .rect {
-      border-radius: 10px;
-      background-color: antiquewhite;
-      margin: 8%;
-      text-align: center;
-      font-size: 12px;
-      color: rgb(22, 66, 35);
-      padding: 0px 30px;
+    h1 {
+      font-size: 2rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1 {
+      color: transparent;
+  -webkit-text-stroke: 2px blueviolet;
+      position: relative;
+    }
+
+    h1::before {
+      content: "JEREMY MAGPANTAY";
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      overflow: hidden;
+      color: blue;
+      border-right: 8px solid blueviolet;
+      transition: 1s ease-in-out;
+
+    }
+
+    h1:hover::before {
+      width: 100%;
+      filter: drop-shadow(0 0 25px blueviolet);
+
     }
 
     header {
@@ -82,12 +101,14 @@
   </header>
 
   <div class="main-content">
-    <div class="rect">
-      <h2>
-        HI IM, JEREMY MAGPANTAY
-      </h2>
+
+   <h1>JEREMY MAGPANTAY</h1>
+   
+    <div>
+
+      <img src="me2.jpg" width="350" height="450">
+
     </div>
-    <img src="me2.jpg" width="350" height="450">
 
     <div>
       <a href="page.html"><img src="click here.png" width="100" height="100">
